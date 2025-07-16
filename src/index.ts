@@ -4,7 +4,7 @@ import micromarkOFM from "@goonco/micromark-extension-ofm";
 
 export default function remarkOFM(options) {
 	const settings = options;
-	const data = self.data();
+	const data = this.data();
 
 	const micromarkExtensions =
 		data.micromarkExtensions || (data.micromarkExtensions = []);

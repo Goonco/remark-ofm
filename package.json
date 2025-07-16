@@ -1,9 +1,10 @@
 {
 	"name": "@goonco/remark-ofm",
-	"version": "0.1.0",
+	"version": "0.1.1-dev.1",
 	"description": "A remark extension to support obsidian flavored markdown syntax",
 	"scripts": {
-		"build": "tsup"
+		"build": "tsup",
+		"prepublishOnly": "npm run build"
 	},
 	"keywords": [
 		"remark",
@@ -37,5 +38,9 @@
 		"@biomejs/biome": "2.1.1",
 		"tsup": "^8.5.0",
 		"typescript": "^5.8.3"
+	},
+	"dependencies": {
+		"@goonco/mdast-util-ofm": "^0.1.0",
+		"@goonco/micromark-extension-ofm": "^0.1.0"
 	}
 }
